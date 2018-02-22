@@ -3,6 +3,7 @@
 body{
 	min-width: 320px;
 	max-width: 960px;
+	margin: 0 auto;
 }
 
 body>header{
@@ -16,7 +17,6 @@ body>header{
 }
 
 body>header>img{
-	max-width: 100%;
 	width:26%;
 	align-self: center;
 }
@@ -37,6 +37,11 @@ body>section{
 	overflow: hidden;
 }
 
+body>section>h2{
+	border-bottom: 1px solid #234;
+	padding: 0 .5em;
+}
+
 body>section>div{
 	display: flex;
 	flex-direction: column;
@@ -54,3 +59,31 @@ body>footer{
 	color: #fff;
 	padding: .5em;
 	}
+
+@media all and (min-width: 540px)
+{
+	body>header{
+		flex-direction: row;
+	}
+	body>header>img{
+		margin-right: 1em;
+		padding-left: 5em;
+	}
+	body>header>div{
+		flex-grow: 1;
+		padding: 2em;
+	}
+}
+
+@media all and (min-width: 640px){
+	body>section>div{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around; /*Really important setting, utilises all available (empty) space and flows it AROUND elements, allows a dynamic transition between the amount of content on each row as the screen expands rather than lots of empty space on the right hand side until another article pops up*/
+		}
+		body>section>div>article{
+			width:300px;
+			flex-grow:1;
+			margin: .5em;
+		}
+}
