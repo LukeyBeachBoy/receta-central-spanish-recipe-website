@@ -1,12 +1,52 @@
 *{box-sizing: border-box;} /*always need this */
 
+body{
+	min-width: 320px;
+	max-width: 960px;
+}
+
 body>header{
 	background-color: #1B5074;
 	color: #fff;
 	overflow: hidden;
 	padding: .5em;
+	display:flex;
+	flex-direction: column;
+	text-align: center;
 }
 
+body>header>img{
+	max-width: 100%;
+	width:26%;
+	align-self: center;
+}
+body>header>div>h1,
+body>header>div>p{
+	margin:0;
+}
+body>header>div>p{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: .5em 0;
+	margin-top: .5em;
+}
+
+body>section{
+	background-color: #ccc;
+	padding-top: .5em;
+	overflow: hidden;
+}
+
+body>section>div{
+	display: flex;
+	flex-direction: column;
+}
+
+body>section>div>article{
+	margin: .5em;
+	padding: .5em;
+	background-color: #fff;
+}
 
 body>footer{
 	overflow: hidden;
