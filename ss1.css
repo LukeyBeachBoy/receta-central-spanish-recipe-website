@@ -1,0 +1,17 @@
+*{box-sizing: border-box;} /*always need this */
+
+body>header{
+	background-color: #1B5074;
+	color: #fff;
+	overflow: hidden;
+	padding: .5em;
+}
+
+
+
+body>footer{
+	overflow: hidden;
+	background-color: #2E0000;
+	color: #fff;
+	padding: .5em;
+	}
