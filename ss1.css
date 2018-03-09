@@ -17,7 +17,7 @@ body>header{
 }
 
 body>header>img{
-	width:26%;
+	max-width:30%;
 	align-self: center;
 }
 body>header>div>h1,
@@ -33,13 +33,46 @@ body>header>div>p{
 
 body>section{
 	background-color: #ccc;
-	padding-top: .5em;
+	padding-top: 0;
 	overflow: hidden;
 }
 
 body>section>h2{
+	text-align: center;
 	border-bottom: 1px solid #234;
-	padding: 0 .5em;
+	background-color: #BEBEBE;
+	padding: .5em;
+	margin: 0 auto;
+}
+
+body>section>ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;;
+}
+
+body>section>ul>li{	
+	margin: 0 auto; 
+	overflow: hidden;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+body>section>ul>li>a{
+	display:block;
+	color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+body>section>ul>li>a:hover:not(.active){
+	background-color: #111;
 }
 
 body>section>div{
@@ -59,6 +92,13 @@ body>footer{
 	color: #fff;
 	padding: .5em;
 	}
+	body>footer>p{
+		display: inline-block;
+		margin-left: .5em;
+	}
+		body>footer>p>a{
+			color: white
+		}
 
 @media all and (min-width: 540px)
 {
@@ -67,7 +107,7 @@ body>footer{
 	}
 	body>header>img{
 		margin-right: 1em;
-		padding-left: 5em;
+		padding-left: .5em;
 	}
 	body>header>div{
 		flex-grow: 1;
@@ -76,6 +116,10 @@ body>footer{
 }
 
 @media all and (min-width: 640px){
+	body>header>img{
+		margin-right: 0;
+		padding-left: .5em;
+	}
 	body>section>div{
 	flex-direction: row;
 	flex-wrap: wrap;
