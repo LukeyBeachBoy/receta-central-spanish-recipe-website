@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?rbizxv');
-  src:  url('fonts/icomoon.eot?rbizxv#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?rbizxv') format('truetype'),
-    url('fonts/icomoon.woff?rbizxv') format('woff'),
-    url('fonts/icomoon.svg?rbizxv#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vx19xe');
+  src:  url('fonts/icomoon.eot?vx19xe#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vx19xe') format('truetype'),
+    url('fonts/icomoon.woff?vx19xe') format('woff'),
+    url('fonts/icomoon.svg?vx19xe#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-circle-o-left:before {
+  content: "\e900";
+}
+.icon-arrow-circle-o-right:before {
+  content: "\e901";
+}
+.icon-comment:before {
+  content: "\e903";
+}
+.icon-heart:before {
+  content: "\e904";
+}
+.icon-thumbs-down:before {
+  content: "\e906";
+}
 .icon-home3:before {
   content: "\e902";
 }
@@ -156,6 +171,15 @@ body>section{
 			padding: .5em;
 			background-color: #fff;
 		}
+            body>section>div>article>h3{
+                text-align: center;
+            }
+            body>section>div>article>p{
+                text-align: justify;
+            }
+            body>section>div>article>img{
+                    max-width: 100%;
+                }
 /*FOOTER STYLING*/
 body>footer{
 	overflow: hidden;
@@ -228,15 +252,10 @@ body>footer{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-
         }
             body>section>div>article{
                 min-width: 400px;
-                margin:5em;
             }
-                body>section>div>article>img{
-                    max-width: 100%;
-                }
 }
 
 @media all and (min-width: 640px){
