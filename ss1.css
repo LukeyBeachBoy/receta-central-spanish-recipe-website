@@ -58,7 +58,7 @@ body{
 }
 	/*HEADER STYLING*/
 	body>header{
-		background-color: #E7EFF4;
+		background-color: #636363;
 		color: #fff;
 		overflow: hidden;
 		padding: 0 0 0 0;
@@ -67,11 +67,9 @@ body{
 		text-align: center;
 	}
 		body>header>img{
+            margin-top: .6em;
 			max-width:30%;
 			align-self: center;
-		}
-		body>header>div{
-			background-image:url("banner.jpg");
 		}
 			body>header>div>h1,
 			body>header>div>p{
@@ -79,12 +77,12 @@ body{
 				color: #FFFFFF;
 
 			}
-			body>header>div>p{
+			body>header>p{
 				font-size: 1.2em;
 				border-top: 1px solid #ddd;
 				border-bottom: 1px solid #ddd;
-				padding: .5em 0;
-				margin-top: .5em;
+				padding:  .5em;
+				margin-top: 0;
 			}
 
 
@@ -206,27 +204,39 @@ body>footer{
 		min-width: 500px;
 		max-width: 100%;
 	}
+    /*CENTERING HEADER AND PUTTING INTO ONE ROW*/
 		body>header{
 			flex-direction: row;
-			flex-wrap: wrap;
+            justify-content: center;
 		}
-			body>header>img{
-				margin-right: 1em;
-				padding-left: .5em;
-			}
-			body>header>div{
-				flex-grow: 1;
-				padding: 2em;
-			}
-            body>section>div{
-            flex-direction: row;
-		    flex-wrap: wrap;
-            justify-content: space-around;
- 
+            body>header>p{
+                margin-left:  ;
+                margin: 1.7em 0 0 .5em;
+                align-self: center;
             }
+            body>header>h1{
+                margin: 1em 0 0 .5em;
+                align-self: center;
+            }
+            body>header>img{
+				margin:0;
+                padding: .5em 0 .5em 0;
+                align-self: center;
+            }
+        /*CREATING ROWS FOR ARTICLES*/
+        body>section>div{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        }
             body>section>div>article{
                 min-width: 400px;
+                margin:5em;
             }
+                body>section>div>article>img{
+                    max-width: 100%;
+                }
 }
 
 @media all and (min-width: 640px){
