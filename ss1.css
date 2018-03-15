@@ -165,35 +165,65 @@ body>section{
 		display: flex;
 		flex-direction: column;
 	}
-		/*ARTICLE STYLING FOR RECIPES*/
+		/*RECIPE STYLING*/
 		body>section>div>article{
 			margin: .5em;
 			padding: .5em;
 			background-color: #fff;
 		}
-            body>section>div>article>h3{
+            body>section>div>article>a{
+                color: black;
+                text-decoration: none;
                 text-align: center;
             }
+
             body>section>div>article>p{
                 text-align: justify;
             }
             body>section>div>article>img{
-                    max-width: 100%;
+                max-width: 100%;
                 }
-/*FOOTER STYLING*/
-body>footer{
-	overflow: hidden;
-	background-color: #bd1818;
-	color: #fff;
-	padding: .5em;
-	}
-	body>footer>p{
-		display: inline-block;
-		margin-left: .5em;
-	}
-		body>footer>p>a{
-			color: white
-		}
+            .social{
+                text-align: center;
+                background-color: #eaeaea;
+                border:1px solid #c9b9b9;
+                padding:.3em;
+                margin-top: 3em;
+            }
+            .social>i{
+            padding-left: 1.5em;
+                margin:auto;
+            }
+            .social>p{
+            display: inline;
+            padding-right: 1.5em;
+            padding-left: .5em;
+            margin:auto;
+            }
+
+            .icon-heart{
+                color:red;
+            }
+            .icon-thumbs-down{
+                color:blue;
+            }
+            .icon-comment{
+                color:#42000e
+            }
+            /*FOOTER STYLING*/
+            body>footer{
+                overflow: hidden;
+                background-color: #bd1818;
+                color: #fff;
+                padding: .5em;
+                }
+                body>footer>p{
+                    display: inline-block;
+                    margin-left: .5em;
+                }
+                    body>footer>p>a{
+                        color: white
+                    }
 /*ACTIVATE DESKTOP NAV BAR WHEN DEVICE WIDTH MORE THAN 480PX*/
 @media all and (min-width:480px){
     body>nav{
@@ -251,9 +281,12 @@ body>footer{
         body>section>div{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content:center;
         }
             body>section>div>article{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 min-width: 400px;
             }
 }
@@ -267,7 +300,6 @@ body>footer{
         margin: auto;
         padding: 0;
         max-width: 80%;
-		 /*Really important setting, utilises all available (empty) space and flows it AROUND elements, allows a dynamic transition between the amount of content on each row as the screen expands rather than lots of empty space on the right hand side until another article pops up*/
 		}
 			body>section>div>article{
 				width:300px;
