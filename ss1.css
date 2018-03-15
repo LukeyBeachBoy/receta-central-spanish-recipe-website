@@ -1,3 +1,53 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?rbizxv');
+  src:  url('fonts/icomoon.eot?rbizxv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rbizxv') format('truetype'),
+    url('fonts/icomoon.woff?rbizxv') format('woff'),
+    url('fonts/icomoon.svg?rbizxv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-file-empty:before {
+  content: "\e924";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-enter:before {
+  content: "\ea13";
+}
+.icon-exit:before {
+  content: "\ea14";
+}
+
+
+
 *{box-sizing: border-box;} /*always need this */
 
 body{
@@ -5,47 +55,44 @@ body{
 	max-width: 960px;
 	margin: 0 auto;
 }
+	/*HEADER STYLING*/
+	body>header{
+		background-color: #E7EFF4;
+		color: #fff;
+		overflow: hidden;
+		padding: 0 0 0 0;
+		display:flex;
+		flex-direction: column;
+		text-align: center;
+	}
+		body>header>img{
+			max-width:30%;
+			align-self: center;
+		}
+		body>header>div{
+			background-image:url("banner.jpg");
+		}
+			body>header>div>h1,
+			body>header>div>p{
+				font-family:'Roboto';
+				font-weight: bold;
+				color: #FFFFFF;
 
-body>header{
-	background-color: #1B5074;
-	color: #fff;
-	overflow: hidden;
-	padding: .5em;
-	display:flex;
-	flex-direction: column;
-	text-align: center;
-}
+			}
+			body>header>div>p{
+				font-size: 1.2em;
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				padding: .5em 0;
+				margin-top: .5em;
+			}
 
-body>header>img{
-	max-width:30%;
-	align-self: center;
-}
-body>header>div>h1,
-body>header>div>p{
-	margin:0;
-}
-body>header>div>p{
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-	padding: .5em 0;
-	margin-top: .5em;
-}
 
-body>section{
-	background-color: #ccc;
-	padding-top: 0;
-	overflow: hidden;
+/*NAV BAR STYLING*/
+.active {
+    background-color: #4CAF50;
 }
-
-body>section>h2{
-	text-align: center;
-	border-bottom: 1px solid #234;
-	background-color: #BEBEBE;
-	padding: .5em;
-	margin: 0 auto;
-}
-
-body>section>ul{
+body>nav>ul{
 	display: flex;
 	flex-direction: row;
 	list-style-type: none;
@@ -54,37 +101,56 @@ body>section>ul{
     overflow: hidden;
     background-color: #333;;
 }
+	body>nav>ul>li{	
+		margin: 0 auto; 
+		overflow: hidden;
+	}
 
-body>section>ul>li{	
-	margin: 0 auto; 
+		body>nav>ul>li>a{
+			display:block;
+			color: white;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		}
+			body>nav>ul>li>a:hover:not(.active){
+				background-color: #111;
+			}
+
+			body>nav>ul>li>a>span{
+				display: none;
+			}
+
+/*MAIN AREA STYLING*/
+body>section{
+	background-color: #BC2825;
+	padding-top: 0;
 	overflow: hidden;
 }
-.active {
-    background-color: #4CAF50;
-}
 
-body>section>ul>li>a{
-	display:block;
-	color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-body>section>ul>li>a:hover:not(.active){
-	background-color: #111;
-}
-
-body>section>div{
-	display: flex;
-	flex-direction: column;
-}
-
-body>section>div>article{
-	margin: .5em;
-	padding: .5em;
-	background-color: #fff;
-}
+	body>section>h2{
+		font-family: 'Roboto';
+		font-weight: bold;
+		color: #FFFFFF;
+		text-decoration: underline;
+		text-align: center;
+		border-bottom: 1px solid #234;
+		background-color: #808080;
+		padding: .5em;
+		margin: 0 auto;
+	}
+	/*CONTAINER FOR RECIPE AR*/
+	body>section>div{
+		display: flex;
+		flex-direction: column;
+	}
+		/*ARTICLE STYLING FOR RECIPES*/
+		body>section>div>article{
+			font-family: 'Roboto';
+			margin: .5em;
+			padding: .5em;
+			background-color: #fff;
+		}
 
 body>footer{
 	overflow: hidden;
@@ -102,17 +168,26 @@ body>footer{
 
 @media all and (min-width: 540px)
 {
-	body>header{
-		flex-direction: row;
+	body{
+		min-width: 540px;
+		max-width: 100%;
 	}
-	body>header>img{
-		margin-right: 1em;
-		padding-left: .5em;
-	}
-	body>header>div{
-		flex-grow: 1;
-		padding: 2em;
-	}
+		body>header{
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+			body>header>img{
+				margin-right: 1em;
+				padding-left: .5em;
+			}
+			body>header>div{
+				flex-grow: 1;
+				padding: 2em;
+			}
+		body>section>ul>li>a>span{
+		display: inline;
+		}
 }
 
 @media all and (min-width: 640px){
@@ -120,14 +195,21 @@ body>footer{
 		margin-right: 0;
 		padding-left: .5em;
 	}
-	body>section>div{
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around; /*Really important setting, utilises all available (empty) space and flows it AROUND elements, allows a dynamic transition between the amount of content on each row as the screen expands rather than lots of empty space on the right hand side until another article pops up*/
+	body>section{
+		min-height: 50em;
+	}
+		body>section>div{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around; /*Really important setting, utilises all available (empty) space and flows it AROUND elements, allows a dynamic transition between the amount of content on each row as the screen expands rather than lots of empty space on the right hand side until another article pops up*/
 		}
-		body>section>div>article{
-			width:300px;
-			flex-grow:1;
-			margin: .5em;
-		}
+			body>section>div>article{
+				width:300px;
+				flex-grow:1;
+				margin:.5em;
+			}
 }
+@media all and (min-width:1265px){
+	body>section>div>article{
+		max-width: 18%;
+	}
