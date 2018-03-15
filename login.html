@@ -8,20 +8,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header><img src="fork.png" alt="">
-	<div><h1>Receta Central</h1>
+	<header>
+	<div><img src="fork.png" alt=""><h1>Receta Central</h1>
 	<p>El mejor sitio web en el mundo para recetas. </p>
-	<div>
+	</div>
 </header>
-<section>
-	<ul>
-		<li><a href="index.html">Inicio</a></li>
-		<li><a href="buscar.html">Buscar</a></li>
-		<li><a class ="active" href="login.html">Login</a></li>
-		<li><a href="registro.html">Registro</a></li>
-		<li><a href="default">Logout</a></li>
-		<li><a href="nueva-receta.html">Nueva Receta</a></li>
-	</ul>
+<nav>
+	<label for="toggle">&#9776; Menu</label>
+	<input type="checkbox" id="toggle"/>
+	<div class="menu">
+		<a class ="active" href="index.html"><i class="icon-home3"></i> <span>Inicio</span></a>
+		<a href="buscar.html"><i class="icon-search"></i> <span>Buscar</span></a>
+		<a href="login.html"><i class="icon-enter"></i> <span>Login</span></a>
+		<a href="registro.html"><i class="icon-user-tie"></i> <span>Registro </span></a>
+		<a href="default"><i class="icon-exit"></i> <span>Logout </span></a>
+		<a href="nueva-receta.html"><i class="icon-pencil"></i> <span> Nueva Receta </span></a>
+	</div>
+</nav>
+	<section>
 	<h2>Aquí tienes nuestras recetas más recientes!</h2>
 	<div>
 	<article>
