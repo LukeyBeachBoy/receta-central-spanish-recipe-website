@@ -25,58 +25,29 @@
 	</div>
 </nav>
 	<section>
-	<h2>Aquí tienes nuestras recetas más recientes!</h2>
-	<div>
-	<article>
-		<h3>Lorem ipsum dolor sit amet.</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, molestias recusandae quidem explicabo placeat! Labore iusto officiis explicabo asperiores facere dignissimos a quas iure laboriosam amet laudantium fugit magni consequatur id nostrum, expedita cum consectetur eum? Doloremque dolorem voluptates veniam.</p>
-		<footer>
-			<p>pie art. 1</p>
-		</footer>
-	</article>
-	<article>
-		<h3>Receta de Chuletillas de cordero a la provenzal</h3>
-		<img src="cordero.jpg" alt="">
-		<p>Pela y corta las patatas en rodajas no muy gruesas y rehógalas con aceite en una sartén. Después, colócalas en una placa de horno y agrega caldo, sin llegar a cubrirlas.
+	<form action="action_page.php">
 
-        Sala las chuletillas y ponlas encima de las patatas. Mezcla bien los ingredientes de la provenzal y échaselos por encima a las chuletillas.
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Introducir nombre" name="uname" required  autofocus pattern="^[a-zA-Z][a-zA-Z0-9]{5,19}$">
 
-        Metelo al horno caliente a 200 grados de temperatura durante unos 20 minutos. Retira las patatas y las chuletillas y liga bien el jugo de la placa.
+    <label for="psw"><b>Contraseña</b></label>
+    <input type="password" placeholder="Introducir contraseña" name="psw" required pattern="^[a-zA-Z0-9][a-zA-Z0-9 \-_]{7,19}$">
+    <label for="psw2"><b>Repetir Contraseña</b></label>
+    <input type="password" placeholder="Repetir contraseña" name="psw2" required>
+     <label for="psw2"><b>Introducir Correo Electrónico</b></label>
+    <input type="email" placeholder="Introducir correo electrónico" name="email" required>
+    <input id="date" type = "date" placeholder="Introducir su fecha de nacimiento" required>
+    <button type="submit">Register</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
-        Para servir, coloca en los platos las chuletillas salseadas y las patatas.</p>
-		<footer>
-			<p>pie art. 2</p>
-		</footer>
-	</article>
-	<article>
-		<h3>Doloribus amet magni enim iure!</h3>
-		<p>Magnam ut et exercitationem debitis. Reiciendis molestiae eveniet in sit voluptates ipsam maxime expedita nam. Eius ducimus deleniti obcaecati laudantium molestias, nam eos, cumque ipsa, provident velit magnam nulla beatae excepturi temporibus laboriosam quisquam? Ad quaerat perferendis doloremque facilis omnis.</p>
-		<footer>
-			<p>pie art. 3</p>
-		</footer>
-	</article>
-	<article>
-		<h3>Distinctio fugit illum quae illo.</h3>
-		<p>Iure voluptas aperiam hic enim consectetur. Nostrum illum totam similique assumenda praesentium vero quisquam rem recusandae quaerat excepturi ratione porro eligendi ipsa aliquid soluta, accusamus voluptate minus non blanditiis. Illum, nisi! Voluptate vel corrupti repellendus facilis necessitatibus quibusdam minus eaque!</p>
-		<footer>
-			<p>pie art. 4</p>
-		</footer>
-	</article>
-	<article>
-		<h3>Repellendus fuga, quam cumque mollitia.</h3>
-		<p>Culpa, suscipit facilis voluptates voluptatibus rerum aperiam asperiores vitae iste, voluptatem fugit quibusdam impedit quia id, ipsum magni illo beatae assumenda laborum et aliquid natus sed quos velit! Harum, possimus, aperiam. Doloribus sint praesentium, sunt at unde voluptates sapiente veniam!</p>
-		<footer>
-			<p>pie art. 5</p>
-		</footer>
-	</article>
-	<article>
-		<h3>Doloremque itaque, eveniet minus neque!</h3>
-		<p>Dolor earum magni ea, debitis vero animi minus officiis. Assumenda deleniti repellat enim quia unde quod nisi, illo blanditiis? Eos eligendi nihil eius nemo consectetur, omnis deleniti qui ab iste pariatur porro impedit esse maiores molestias aliquam, id illum distinctio.</p>
-		<footer>
-			<p>pie art. 6</p>
-		</footer>
-	</article>
-</div>
+  <div class="container">
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>
 </section>
 <footer>
 	<p>&copy; <strong>PCW</strong> <time datetime="2018-02">febrero 2018</time></p> <p><a href="acerca.html">Información de contacto</a></p>
