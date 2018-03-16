@@ -243,20 +243,35 @@ select{
             .icon-comment{
                 color:#42000e
             }
-            /*FOOTER STYLING*/
-            body>footer{
-                overflow: hidden;
-                background-color: #bd1818;
-                color: #fff;
-                padding: .5em;
-                }
-                body>footer>p{
-                    display: inline-block;
-                    margin-left: .5em;
-                }
-                    body>footer>p>a{
-                        color: white
-                    }
+
+#pagination {
+    max-width: 100%;
+    margin:0 auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #dcc6c6;
+    padding:.5em;
+}
+
+#pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+/*FOOTER STYLING*/
+body>footer{
+    overflow: hidden;
+    background-color: #bd1818;
+    color: #fff;
+    padding: .5em;
+    }
+    body>footer>p{
+        display: inline-block;
+        margin-left: .5em;
+    }
+        body>footer>p>a{
+            color: white
+        }
 /*ACTIVATE DESKTOP NAV BAR WHEN DEVICE WIDTH MORE THAN 480PX*/
 @media all and (min-width:480px){
     body>nav{
