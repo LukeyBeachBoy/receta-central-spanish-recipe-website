@@ -179,16 +179,26 @@ body>section{
 	}
 		/*RECIPE STYLING*/
 		body>section>div>article{
+            display: flex;
+            flex-direction: column;
 			margin: .5em;
 			padding: .5em;
 			background-color: #fff;
 		}
             body>section>div>article>div>a{
+                display: flex;
                 color: black;
                 text-decoration: none;
-                text-align: center;
+                align-content: ;
             }
-
+            body>section>div>article>div>a>h3{
+            margin: 0 auto;
+            padding: .5em;
+            display: inline;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            }
             body>section>div>article>div>p{
                 text-align: justify;
             }
