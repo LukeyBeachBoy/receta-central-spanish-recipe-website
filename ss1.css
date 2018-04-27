@@ -154,15 +154,17 @@ body>section{
     /*QUICK SEARCH BAR*/
 #searchContainer{
 	display: flex;
+    text-align: center;
 }
 #search{
-    margin:auto;
+
 }
 #search>button{
     padding: 0px;
     margin-right: .5em;
     max-width: 4em;
 }
+
 
 	body>section>h2{
 		color: #FFFFFF;
