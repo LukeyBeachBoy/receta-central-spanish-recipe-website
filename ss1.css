@@ -150,18 +150,28 @@ body>section{
 	background-color: #f05a5a;
 	padding-top: 0;
 	overflow: hidden;
+    min-height: calc(100vh - 308.85px - 67.2px)
 }
+@media all and (min-width: 717px){
+    body>section{
+        min-height: calc(100vh - 196.4px);
+    }
+    }
     /*QUICK SEARCH BAR*/
+}
 #searchContainer{
+    width: 100%;
 	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
+    align-items: center;
 }
-#search{
-
+#searchContainer>div{
+    margin: auto;
 }
-#search>button{
-    padding: 0px;
-    margin-right: .5em;
+#searchContainer>button{
+    padding: 0.4px;
     max-width: 4em;
 }
 
@@ -243,22 +253,6 @@ body>section>div>article>div{
 /*LOGIN PAGE*/
 
 
-/* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
-}
-
-#registerbtn{
-     background-color: #f44336;
-    color: white;
-    margin: 8px,0;
-    padding: 8px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    
-}
-
 /* Full-width inputs */
 input[type=text], input[type=password], input[type=email], input[type=date] {
     width: 100%;
@@ -266,12 +260,11 @@ input[type=text], input[type=password], input[type=email], input[type=date] {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
 .container>button {
-    background-color:#a49292 ;
+    background-color:#AFAFAF ;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -281,20 +274,24 @@ input[type=text], input[type=password], input[type=email], input[type=date] {
 }
 
 /* Add a hover effect for buttons */
-.container>button:hover {
+.container>button:hover,a:hover {
     opacity: 0.8;
 }
 
 /* Extra style for the cancel button (red) */
 .container>.cancelbtn {
     width: auto;
-    padding: 10px 18px;
-    background-color: #a29494;
+    background-color: #F71010;
 }
-
+/*Extra style for register button(green)*/
+.container>#registerbtn{
+    width: auto;
+    background-color: #47E009;
+}
 /* Add padding to containers */
-.container {
-    padding: 16px;
+form>.container {
+    padding: .5em;
+    width:20em;
 }
 
 /* The "Forgot password" text */
@@ -323,9 +320,9 @@ span.psw {
 
 #pagination {
     max-width: 100%;
-    margin:0 auto;
-    display: inline-flex;
-    flex-wrap: wrap;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
     background-color: #dcc6c6;
     padding:.5em;
 }
@@ -338,8 +335,8 @@ span.psw {
 /*FOOTER STYLING*/
 body>footer{
     overflow: hidden;
-    background-color: #bd1818;
-    color: #fff;
+    background-color: #bd1818; 
+    color: #fff;    
     padding: .5em;
     }
     body>footer>p{
@@ -351,6 +348,9 @@ body>footer{
         }
 /*ACTIVATE DESKTOP NAV BAR WHEN DEVICE WIDTH MORE THAN 480PX*/
 @media all and (min-width:480px){
+     body>section{
+        min-height: calc(100vh - 334.50px)
+    }
     body>nav{
         background-color:#333333 ;
         padding: .6em;
@@ -375,10 +375,14 @@ body>footer{
     .menu a>span{
         display: inline;
     }
+
 }
     /*WRAP ARTICLES IN ROWS WHEN SCREEN LARGER THAN 540PX*/
 @media all and (min-width: 540px)
 {
+    body>section{
+        min-height: calc(100vh - 196.4px - 67.2px);
+    }
 	body{
 		min-width: 500px;
 		max-width: 100%;
