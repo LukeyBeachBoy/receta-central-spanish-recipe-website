@@ -70,6 +70,7 @@ body{
 	min-width: 320px;
 	max-width: 960px;
 	margin: 0 auto;
+
 }
 	/*HEADER STYLING*/
 	body>header{
@@ -158,23 +159,6 @@ body>section{
     }
     }
     /*QUICK SEARCH BAR*/
-}
-#searchContainer{
-    width: 100%;
-	display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-}
-#searchContainer>div{
-    margin: auto;
-}
-#searchContainer>button{
-    padding: 0.4px;
-    max-width: 4em;
-}
-
 
 	body>section>h2{
 		color: #FFFFFF;
@@ -317,6 +301,50 @@ span.psw {
         padding:0;
     }
 }
+/*SEARCH PAGE*/
+
+.search-container{
+    display: flex;
+    flex-direction: row;
+    background: #ddd;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+}
+
+#qSearchContainer{
+    width:25em;
+}
+
+.search-container input[type=text]{
+    display: flex;
+    padding: 6px 10px;
+    margin-top: 8px;
+    font-size: 1.5em;
+    border: none;
+    margin: auto;
+}
+
+
+#quickSearch{
+    padding:none;
+}
+.search-container form{
+    width: 100%;
+    margin: auto;
+    padding: .5em;
+    display: flex; 
+}
+.search-container button{
+    background: #ccc;   
+    padding: .55em;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    }
 
 #pagination {
     max-width: 100%;
@@ -436,7 +464,3 @@ body>footer{
 				margin:.2em;
 			}
 }
-@media all and (min-width:1265px){
-	body>section>div>article{
-		max-width: 18%;
-	}

@@ -29,18 +29,18 @@
 	<section>
 	
 	<h2>Últimas Recetas</h2>
-	<div id = "searchContainer">
-	<div>
-        <input type="search" placeholder="Busca Rápida" name ="search">
+    <div class = "search-container" id= "qSearchContainer">
+    <form action="/action_page.php">
+    <input type="text" id ="quickSearch" placeholder="Busca Rápida" name ="text">
         <button type="submit"><i class="icon-search">    </i></button>
-        <select>
+        <select class = "sort">
           <option value="Asce">Valoracion Ascendente</option>
           <option value="saab">Fecha Ascendente</option>
           <option value="opel">Valoracion Descendente</option>
           <option value="audi">Fecha Descendente</option>
-        </select>
- </div>
- </div>
+        </select> 
+    </form>
+    </div>
 	<div>
 	<article>
         <div id ="recipe content">
