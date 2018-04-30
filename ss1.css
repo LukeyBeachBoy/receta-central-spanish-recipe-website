@@ -201,6 +201,9 @@ body>section{
             body>section>div>article>div>img{
                 max-width: 100%;
                 }
+            body>section>div>article>div time{
+                float:right;
+            }
             .social{
                 text-align: center;
                 background-color: #eaeaea;
@@ -235,7 +238,16 @@ body>section>div>article>div{
     flex-grow:1;
 }
 /*LOGIN PAGE*/
-
+.flexible{display: flex;}
+#loginContainer{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body>section>div>form{
+    margin: auto;
+}
 
 /* Full-width inputs */
 input[type=text], input[type=password], input[type=email], input[type=date] {
@@ -273,9 +285,10 @@ input[type=text], input[type=password], input[type=email], input[type=date] {
     background-color: #47E009;
 }
 /* Add padding to containers */
-form>.container {
+form>div>.container {
     padding: .5em;
     width:20em;
+    background-color: #D2D2D2;
 }
 
 /* The "Forgot password" text */
