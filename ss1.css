@@ -394,7 +394,12 @@ span.psw {
     display: flex;
     flex-direction: column;
 }
+.recipeContent{
+    border:1px solid black;
+    text-align: justify;
+}
 #info{
+    border: 1px solid #ABABAB;
     font-size:.7em;
     text-align: center;
 }
@@ -425,6 +430,9 @@ span.psw {
     text-decoration: none;
     list-style: none;
     padding: 0;
+}
+#social{
+    margin: 0;
 }
 
 
