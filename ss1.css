@@ -237,17 +237,17 @@ body>section>div>article>div{
     height: 1;
     flex-grow:1;
 }
-/*LOGIN PAGE*/
 .flexible{display: flex;}
-#loginContainer{
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+/*REGISTER PAGE*/
+#register{
+    display: flex;  
+    margin:auto;
 }
-body>section>div>form{
-    margin: auto;
-}
+
+/*LOGIN PAGE*/
+
+
 
 /* Full-width inputs */
 input[type=text], input[type=password], input[type=email], input[type=date] {
@@ -297,14 +297,6 @@ span.psw {
     padding-top: 16px;
     display: block;
 }
-
-/* Big screens */
-@media screen and (min-width: 300px) {
-    .container{
-        max-width: 100%;
-        width: 50%;
-        margin:auto;
-    }
     span.psw {
         display:inline;
        
@@ -326,7 +318,7 @@ span.psw {
 }
 
 #qSearchContainer{
-    width:25em;
+    max-width: 425.6px;
 }
 
 .search-container input[type=text]{
@@ -340,7 +332,8 @@ span.psw {
 
 
 #quickSearch{
-    padding:none;
+    padding:12px;
+    font-size: 14px;
 }
 .search-container form{
     width: 100%;
@@ -396,7 +389,7 @@ body>footer{
         background-color:#333333 ;
         padding: .6em;
     }
-    label{
+    body>nav>label{
         display: none;
     }
     .menu{
@@ -473,7 +466,7 @@ body>footer{
 		}
 			body>section>div>article{
 				width:300px;
-				flex-grow:1;
+
 				margin:.2em;
 			}
 }
