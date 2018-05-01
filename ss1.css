@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?893zc8');
-  src:  url('fonts/icomoon.eot?893zc8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?893zc8') format('truetype'),
-    url('fonts/icomoon.woff?893zc8') format('woff'),
-    url('fonts/icomoon.svg?893zc8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?789i6m');
+  src:  url('fonts/icomoon.eot?789i6m#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?789i6m') format('truetype'),
+    url('fonts/icomoon.woff?789i6m') format('woff'),
+    url('fonts/icomoon.svg?789i6m#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -63,6 +63,12 @@
 .icon-exit:before {
   content: "\ea14";
 }
+.icon-star-full:before {
+  content: "\e909";
+}
+.icon-star-empty:before {
+  content: "\e90a";
+}
 .icon-arrow-circle-o-left:before {
   content: "\e900";
 }
@@ -78,8 +84,6 @@
 .icon-thumbs-down:before {
   content: "\e906";
 }
-
-
 
 
 *{box-sizing: border-box;} /*always need this */
@@ -386,6 +390,44 @@ span.psw {
 }
 
 /*RECIPE PAGE STYLING*/
+.recipeContainer{
+    display: flex;
+    flex-direction: column;
+}
+#info{
+    font-size:.7em;
+    text-align: center;
+}
+#info>div{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#info>div>div{
+    display: block;
+    flex-direction: column;
+    margin:0 auto;
+    align-items: center;
+    padding:.5em;
+}
+#info>div>div>div>{
+    margin:.5em;
+    display: flex;
+    text-align: center;
+    align-self: center;
+    flex-direction: column;
+    align-items: baseline;
+    line-height: 1; 
+}
+#info>div>div>div>h1,p,time,li,ul{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+
 .photo>img{
     margin: 0;
      border:1px solid #B6B6B6;
@@ -513,7 +555,7 @@ body>footer{
         max-width: 80%;
 		}
 			body>section>div>article{
-				width:300px;
+				width:100%;
 
 				margin:.2em;
 			}
