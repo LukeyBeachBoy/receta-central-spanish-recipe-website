@@ -171,6 +171,7 @@ body>section{
 	/*CONTAINER FOR RECIPE ARTICLES*/
 	body>section>div{
 		display: flex;
+        margin:auto;
 		flex-direction: column;
 	}
 		/*RECIPE STYLING*/
