@@ -374,16 +374,17 @@ span.psw {
     margin: auto;
     }
 
-#pagination {
-    max-width: 100%;
-    margin: auto;
+.pagination {
+    margin: 0;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     background-color: #dcc6c6;
-    padding:.5em;
+    padding:.4em;
 }
 
-#pagination a {
+.pagination a {
+    margin: auto;
     color: black;
     padding: 8px 16px;
     text-decoration: none;
@@ -397,7 +398,20 @@ span.psw {
 .recipeContent{
     border:1px solid black;
     text-align: justify;
+    padding:.6em;
 }
+
+.recipeContent p {
+    text-align: justify;
+}
+
+#commentPag{
+    font-size: 1em;
+    background-color: #FFFFFF;
+}
+#commentPag>a{
+font-size: 0.7em;
+    }
 #info{
     border: 1px solid #ABABAB;
     font-size:.7em;
@@ -425,7 +439,7 @@ span.psw {
     align-items: baseline;
     line-height: 1; 
 }
-#info>div>div>div>h1,p,time,li,ul{
+#info>div>div>div>h1,p,li,ul{
     text-align: center;
     text-decoration: none;
     list-style: none;
@@ -434,8 +448,25 @@ span.psw {
 #social{
     margin: 0;
 }
+#like{
+    cursor: pointer;
+}
 
+#dislike{
+    cursor: pointer;
+}
 
+#commentbutton{
+    cursor: pointer;
+}
+.comments{
+    border: 1px solid black;
+    padding: .5em;
+
+}
+#commentBox{
+    border:1px solid #9F9F9F;
+}
 .photo>img{
     margin: 0;
      border:1px solid #B6B6B6;
@@ -560,11 +591,17 @@ body>footer{
 		body>section>div{
         margin: auto;
         padding: 0;
-        max-width: 80%;
+        max-width: 70%;
 		}
 			body>section>div>article{
 				width:100%;
 
 				margin:.2em;
 			}
+}
+
+@media all and (min-width: 1255px){
+    body>section>div{
+        max-width: 50%;
+    }
 }

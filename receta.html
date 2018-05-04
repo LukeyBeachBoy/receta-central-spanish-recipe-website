@@ -37,7 +37,7 @@
 				<div>
 				<div>
 					<div>
-						<h1>Autor</h1>
+						<a href = "buscar.html" style = "text-decoration: none; font-size: 1.2em; font-weight: bold;">Autor</a>
 					</div>
 					<div>
 						<p>Nombre</p>
@@ -69,8 +69,6 @@
 								<i class="icon-star-empty"></i>
 								<i class="icon-star-empty"></i>
 								<i class="icon-star-empty"></i>
-								<i class="icon-star-empty"></i>
-								<i class="icon-star-empty"></i>
 							</li>
 						</ul>
 					</div>
@@ -81,10 +79,13 @@
 		<div>
         <!--Social Tab-->
             <div class="social" id =social>
-            <i class="icon-heart"></i><p>14</p>
-            <i class="icon-thumbs-down"></i><p>16</p>
-            <i class="icon-comment"></i><p>10</p>
+            <a id = "like"><i class="icon-heart"></i></a><p>14</p>
+            <a id = "dislike"><i class="icon-thumbs-down"></i></a><p>16</p>
+            <a id = commentbutton><i class="icon-comment"></i></a><p>10</p>
             </div>
+        </div>
+        <div style = "border:1px solid black; padding:0;">
+        	<h2 style ="text-align:left; font-size: 1em; padding: .5em">Instrucciones</h2>
         </div>
 			<div class="recipeContent">
 				<p>Pela y corta las patatas en rodajas no muy gruesas y rehógalas con aceite en una sartén. Después, colócalas en una placa de horno y agrega caldo, sin llegar a cubrirlas.<br/><br/>
@@ -94,7 +95,32 @@
         Metelo al horno caliente a 200 grados de temperatura durante unos 20 minutos. Retira las patatas y las chuletillas y liga bien el jugo de la placa.<br/><br/>
 
         Para servir, coloca en los platos las chuletillas salseadas y las patatas.</p>
-			</div>	
+			</div>
+			<div class="comments">
+
+				<h2 style ="font-size: 1em">Comentarios</h2>
+					<div id="commentBox">
+					<ul id="messages"></ul>
+					</div>
+					<div id="commentInput">
+					<form action="">
+						<input type="text" name="commentTitle" pattern=".{1,50}" required style="text-align: left; padding:0; margin-bottom: 0" placeholder="Escribir su título aqúi">
+						<textarea required style = "width: 100%;"></textarea>
+						<button>Submit</button>
+					</form>		
+					</div>
+					<div>
+					<div class ="pagination" id = commentPag>
+        <a href="#">First</a>
+        <a href="#"><i class="icon-arrow-circle-o-left"></i></a>
+        <a href="#" class ="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#"><i class="icon-arrow-circle-o-right"></i></a>
+        <a href="#">Last</a>
+    </div>
+</div>
+				</div>	
 			</article>
 			</div>
 
